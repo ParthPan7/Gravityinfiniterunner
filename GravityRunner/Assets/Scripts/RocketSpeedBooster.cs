@@ -1,0 +1,16 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RocketSpeedBooster : MonoBehaviour
+{
+    private float Speed = 1.0f;
+    
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 position = transform.position;
+        position.x += Speed * Time.deltaTime;
+        transform.position = position;
+    }
+}
